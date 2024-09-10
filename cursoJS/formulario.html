@@ -3,43 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Interesse em Cursos de Tecnologia</title>
+    <title>Formulário de Contato</title>
 </head>
 <body>
-    <header>
-        <h1>Formulário de Interesse em Cursos de Tecnologia</h1>
-    </header>
+    <h1>Formulário de Contato</h1>
+    <form>
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        <br><br>
 
-        <fieldset>
-            <legend>Informações Pessoais</legend>
-            
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        <br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+        <br><br>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone"><br><br>
-        </fieldset>
+        <label>Sexo:</label>
+        <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+        <label><input type="radio" name="sexo" value="feminino"> Feminino</label>
+        <br><br>
 
-        <fieldset>
-            <legend>Informações sobre Cursos</legend>
-            
-            <label for="cursos">Quais cursos de tecnologia você tem interesse? (marque todos que se aplicam):</label><br>
-            <input type="checkbox" id="cst" name="cursos" value="Curso Superior de Tecnologia">
-            <label for="cst">Curso Superior de Tecnologia</label><br>
+        <label for="interesse">Área de Interesse:</label>
+        <input type="text" id="interesse" name="interesse" value="Desenvolvimento" readonly>
+        <br><br>
 
-            <input type="checkbox" id="tecnico" name="cursos" value="Técnico em Informática">
-            <label for="tecnico">Técnico em Informática</label><br>
+        <label>Preferências de Contato:</label>
+        <label><input type="checkbox" name="preferencias" value="email"> Email</label>
+        <label><input type="checkbox" name="preferencias" value="telefone"> Telefone</label>
+        <label><input type="checkbox" name="preferencias" value="sms"> SMS</label>
+        <br><br>
 
-            <input type="checkbox" id="outros" name="cursos" value="Outros">
-            <label for="outros">Outros (especificar abaixo)</label><br>
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem aqui" required></textarea>
+        <br><br>
 
-            <textarea id="outros-cursos" name="outros-cursos" rows="4" cols="50" placeholder="Especifique outros cursos de interesse aqui, se aplicável."></textarea><br><br>
-        </fieldset>
-
-        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
